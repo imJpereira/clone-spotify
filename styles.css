@@ -93,5 +93,21 @@ body{
 .section-playlist {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
     background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 16px 20px;
+}
+
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text {
+    padding-bottom: 14px;
+    color: #fff;
 }
