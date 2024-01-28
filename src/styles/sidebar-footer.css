@@ -1,5 +1,6 @@
 body{
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar{
@@ -7,18 +8,17 @@ body{
     top:0;
     left:0;
     bottom:0;
-    padding:12px;
-    width:300px;
+    padding:8px;
+    width: 400px;
 }
 
 .sidebar__navigation{
     background-color: #121212;
     border-radius:8px;
-    padding:16px 0 0 16px;
+    padding:8px 0 0 8px;
 }
 
 .logo{
-    background: #121212;
     display:flex;
     border-radius:8px ;
     padding:16px 0 0 16px;
@@ -41,8 +41,17 @@ body{
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+.sidebar nav ul li a:hover {
+    color: #fff;
+}
+
+.sidebar__navigation .fa {
+    margin-right: 20px ;
+    font-size: 20px;
 }
 
 .library{
@@ -54,7 +63,7 @@ body{
     padding:4px 8px;
     color:#b3b3b3;
     font-weight: 600;
-    font-size:14px;
+    font-size:16px;
     margin-top: 10px;
 }
 
@@ -69,13 +78,18 @@ body{
     color:#b3b3b3;
     background-color: transparent;
     border:0px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
     padding:20px 10px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out
+}
+
+.library .library__button:hover {
+    color: #fff;
 }
 
 .library .library__button .fa{
@@ -86,9 +100,29 @@ body{
     padding-right:8px;
 }
 
-.library .library__content .fa-plus{
-    margin: 24px 10px;
+.library .library__content .plus-button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    
 }
+
+
+
+.library .library__content .plus-button button {
+    color:#b3b3b3;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.library .library__content .plus-button button:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
 
 .section-playlist {
     display: flex;
@@ -111,7 +145,6 @@ body{
 .section-playlist__content .text {
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM sans", sans-serif;
 }
 
 .section-playlist__content .title {
@@ -128,21 +161,24 @@ body{
     justify-content: center;
     background-color: #fff;
     color: #000;
-    border-radius: 20px;
-    font-size: 12px;
+    border-radius: 25px;
+    font-size: 14px;
     font-weight: 700;
-    font-family: "DM sans", sans-serif;
+    width: 140px;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
     margin-top: 12px;
     border: 0;
-    width: 113px;
     cursor: pointer;
 }
 
+.section-playlist__content .section-playlist__button:hover {
+    transform: scale(1.05);
+}
+
 .sidebar .cookies {
-    margin: 25px 20px;   
+    margin: 25px 20px;
 }
 
 .sidebar .cookies a{
@@ -169,23 +205,29 @@ body{
     border-radius: 20px;
 }
 
+.languages .languages__button:hover {
+    border: 1px solid #fff;
+    transform: scale(1.05);
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     bottom: 0;
-    padding: 10px 0;
-    width: 100%;
-    height: 70px; 
-    background-color: #b11b9d;
+    margin: 8px;
+    padding: 8px 0;
+    width: calc(100% - 16px);
+    height: 50px; 
+    background: linear-gradient(to right, #ae2896, #509bf5);
 }
 
 .footer .footer__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 10px;
 }
 
 .footer__content .text {
@@ -193,8 +235,8 @@ body{
         flex-direction: column;
         text-align: left;
         padding: 4px;
-        font-family: "DM sans", sans-serif;
         color: #fff;
+        font-size: 14px;
 }
 
 .footer__content .title {
@@ -202,10 +244,16 @@ body{
     font-weight: 600;
 } 
 
+.footer__content .description {
+    font-weight: 500;
+} 
+
+
 .footer__content .inscreva-se {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 10px;
 }
 
 .inscreva-se .inscreva-se__button {
@@ -213,10 +261,17 @@ body{
     border: none;
     border-radius: 30px;
     padding: 13px;
-    height: 50px;
-    width: 200px;
-    font-size: 14px;
-    font-weight: 700;
+    height: 40px;
+    width: 180px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 }
+
+.inscreva-se .inscreva-se__button:hover {
+    transform: scale(1.03);
+    background-color: #dfd9d9;
+}
+
+
 
