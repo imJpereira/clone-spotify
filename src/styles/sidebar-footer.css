@@ -177,6 +177,10 @@ body{
     transform: scale(1.05);
 }
 
+.podcast {
+    margin-bottom: 216px;
+}
+
 .sidebar .cookies {
     margin: 25px 20px;
 }
@@ -214,7 +218,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
     bottom: 0;
     margin: 8px;
     padding: 8px 0;

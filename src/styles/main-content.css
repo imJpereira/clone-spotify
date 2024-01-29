@@ -105,10 +105,10 @@
 
     /* PLAYLIST */
 .playlist-container {
-  height: 68vh;
+  height: 80vh;
   padding-top: 16px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #121212;
 }
 
@@ -131,7 +131,7 @@
 
 /* SCROLL */
 .offer__scroll-container {
-  max-height: 43vh;
+  max-height: 64vh;
   margin: 24px;
   overflow-y: auto;
 }
